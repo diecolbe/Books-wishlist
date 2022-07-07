@@ -70,13 +70,13 @@ docker run -d -p 6379:6379 --network microchallenge --name redis-database redis
 
 **ToDo**
 
-*Falta implmentar la funcionalidad guardado en cache las consultas de libros para de esta manera evitar varias peticiones hacia un mismo recurso
+1-Guardado en cache las consultas de libros para de esta manera evitar varias peticiones hacia un mismo recurso
 
-*Falta implementar el Front-End.
+2-Front-End.
 
-*Proceso de Auditoria
+3-Proceso de Auditoria
 
-*HATEOAS
+4-HATEOAS
 
 Estos requisitos no estaban plasmados en el documento, pero se enuncian para mejorar y complementar la aplicacion.
 
@@ -90,16 +90,18 @@ APiKey: AIzaSyDYP8VYA5Jo6RtL_N86knRjMWPGjfMOpcw
 
 **Filtro por titulo**
 
-[title]+intitle:Flowers For Algernon
+[title]+intitle:clean clode
 
 ejemplo:
 
-clean clode+intitle: clean clode
+clean clode+intitle:clean clode
 
 **Filtro por autor**
 
 [Author]+inauthor
+
 ejemplo:
+
 clean clode+inauthor: robert c martin
 
 **Filtro por editorial**
@@ -107,5 +109,6 @@ clean clode+inauthor: robert c martin
 [Editorial]+inpublisher
 
 Ejemplo:
+
 Financial Times/Prentice Hall+inpublisher:financial
 
