@@ -6,6 +6,7 @@ para ejecutarla se debe ir a la raiz de cada proyecto y copiar la ruta, luego se
 
 
 **Imagenes**
+
 microservicio -seguridad:
 docker build -t challenge/Seguridad .
 
@@ -30,7 +31,8 @@ docker run -d -p 8030:8080 --name=microservicio-Gateway challenge/Gateway
 docker run -d -p 8040:8080 --name=microservicio-Bookswishlist challenge/Bookswishlist
 
 
-----imagenes para servicios externos----------------
+**Imagenes para servicios externos**
+
 MYSQL 
 docker run --name mysql-database --network microchallenge  -e MYSQL_ROOT_PASSWORD=Prueb@2022 -p 3307:3306 -p 33061:33060 -d mysql
 
@@ -41,14 +43,14 @@ REDIS
 docker run -d -p 6379:6379 --network microchallenge --name redis-database redis
 
 
-------Diagrama Arquitectonico de la aplicacion-----
+**Diagrama Arquitectonico de la aplicacion**
 
 
 ![mercado-libre-challenge-Emision 11-11-Architecture-Microservices](https://user-images.githubusercontent.com/67524326/177678296-d22c7c7b-3219-4ed8-b2a9-c604742e5a58.png)
 
 
 
------Modelo C4- nivel 3---------
+**Modelo C4- nivel 3**
 
 
 ![mercado-libre-challenge-Emision 11-11-C4 Model-Level3](https://user-images.githubusercontent.com/67524326/177784718-138acb19-1124-4fcb-b944-ca7ea7585a2d.png)
@@ -62,10 +64,13 @@ docker run -d -p 6379:6379 --network microchallenge --name redis-database redis
 
 
 
-ToDo
+**ToDo**
 *Falta implmentar la funcionalidad guardado en cache las consultas de libros para de esta manera evitar varias peticiones hacia un mismo recurso
+
 *Falta implementar el Front-End.
+
 *Proceso de Auditoria
+
 *HATEOAS
 
 Estos requisitos no estaban plasmados en el documento, pero se enuncias para mejorar y complementar la aplicacion
