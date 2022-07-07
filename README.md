@@ -83,6 +83,8 @@ docker run -d -p 6379:6379 --network microchallenge --name redis-database redis
 
 4-HATEOAS
 
+5- Unit Tests
+
 Algunos de estos requisitos no estaban plasmados en el documento, pero se enuncian para mejorar y complementar la aplicacion.
 
 
