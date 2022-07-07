@@ -86,12 +86,17 @@ docker run -d -p 6379:6379 --network microchallenge --name redis-database redis
 Algunos de estos requisitos no estaban plasmados en el documento, pero se enuncian para mejorar y complementar la aplicacion.
 
 
-Para probar los servicios, estos cuentas con documentacion mediante Swagger.
+**Documentacion APIS**
 
+Para probar los servicios, estos cuentan con documentacion mediante Swagger.
 
-Api Key, esta se inyecta directamente en el servicio expuesto por el nugget Google.Apis.Books.v1
+**Api Key**
+
+Esta se inyecta directamente en el servicio expuesto por el nugget Google.Apis.Books.v1
 
 APiKey: AIzaSyDYP8VYA5Jo6RtL_N86knRjMWPGjfMOpcw
+
+>**Busqueda de libros**
 
 **Filtro por titulo**
 
