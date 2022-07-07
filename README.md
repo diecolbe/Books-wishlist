@@ -20,7 +20,8 @@ docker build -t challenge/Bookswishlist
 
 
 -----Crear contenedores-------------------
-luego para crear los contenedores se deben ejecutar los sigueientes comandos,
+
+Para crear los contenedores se deben ejecutar los sigueientes comandos,
 los puertos sobre el cual se expone el anfitrion se pueden cambiar segun se quiera que se ejecute
 
 docker run -d -p 8012:8080 --name=microservicio-Seguridad challenge/Seguridad
@@ -64,6 +65,7 @@ ToDo
 *Falta implmentar la funcionalidad guardado en cache las consultas de libros para de esta manera evitar varias peticiones hacia un mismo recurso
 *Falta implementar el Front-End.
 *Proceso de Auditoria
+*HATEOAS
 
 Estos requisitos no estaban plasmados en el documento, pero se enuncias para mejorar y complementar la aplicacion
 
