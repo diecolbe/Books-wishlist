@@ -26,9 +26,13 @@ Para crear los contenedores se deben ejecutar los sigueientes comandos,
 los puertos sobre el cual se expone el anfitrion se pueden cambiar segun se quiera que se ejecute
 
 docker run -d -p 8012:8080 --name=microservicio-Seguridad challenge/Seguridad
+
 docker run -d -p 8020:8080 --name=microservicio-Integracion challenge/Integracion
+
 docker run -d -p 8030:8080 --name=microservicio-Gateway challenge/Gateway
+
 docker run -d -p 8040:8080 --name=microservicio-Bookswishlist challenge/Bookswishlist
+
 
 
 **Imagenes para servicios externos**
