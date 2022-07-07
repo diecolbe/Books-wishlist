@@ -37,13 +37,16 @@ docker run -d -p 8040:8080 --name=microservicio-Bookswishlist challenge/Bookswis
 
 **Imagenes para servicios externos**
 
-MYSQL 
+>MYSQL
+
 docker run --name mysql-database --network microchallenge  -e MYSQL_ROOT_PASSWORD=Prueb@2022 -p 3307:3306 -p 33061:33060 -d mysql
 
-MONGO
+>MONGO
+>
 docker run -p 27018:27017 --network microchallenge --name mongo-database -d mongo
 
-REDIS
+>REDIS
+
 docker run -d -p 6379:6379 --network microchallenge --name redis-database redis
 
 
