@@ -41,9 +41,13 @@ docker run -d -p 6379:6379 --network microchallenge --name redis-database redis
 
 
 ------Diagrama arquitectonico-----
+
+
 ![mercado-libre-challenge-Emision 11-11-Architecture-Microservices](https://user-images.githubusercontent.com/67524326/177678296-d22c7c7b-3219-4ed8-b2a9-c604742e5a58.png)
 
 
 
 -----Modelo C4- nivel 3---------
+
+
 ![mercado-libre-challenge-Emision 11-11-C4 Model-Level3](https://user-images.githubusercontent.com/67524326/177678307-88597c43-9597-40e3-bbf6-51d530c92931.png)
