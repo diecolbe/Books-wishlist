@@ -78,7 +78,7 @@ docker run -d -p 6379:6379 --network microchallenge --name redis-database redis
 
 *HATEOAS
 
-Estos requisitos no estaban plasmados en el documento, pero se enuncias para mejorar y complementar la aplicacion
+Estos requisitos no estaban plasmados en el documento, pero se enuncian para mejorar y complementar la aplicacion.
 
 
 Para probar los servicios, estos cuentas con documentacion mediante Swagger.
