@@ -5,7 +5,7 @@ Web application that allow manage books wishlist
 para ejecutarla se debe ir a la raiz de cada proyecto y copiar la ruta, luego se debe ejecutar el siguente comando: docker build -t [usuario o ambito]/[nombre de la imagen]
 
 
-**Imagenes**
+**Crear Imagenes**
 
 microservicio -seguridad:
 docker build -t challenge/Seguridad .
