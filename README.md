@@ -53,7 +53,17 @@ docker run -d -p 6379:6379 --network microchallenge --name redis-database redis
 ![mercado-libre-challenge-Emision 11-11-C4 Model-Level3](https://user-images.githubusercontent.com/67524326/177678307-88597c43-9597-40e3-bbf6-51d530c92931.png)
 
 
+
+----Marco arquitectonico para el desarrollo de las APIS----
+
+![CleanArchitecture](https://user-images.githubusercontent.com/67524326/177682188-4dfd19ab-8788-4ed1-b0e0-98bc6b4681d7.jpg)
+
+
+
 ToDo
 *Falta implmentar la funcionalidad guardado en cache las consultas de libros para de esta manera evitar varias peticiones hacia un mismo recurso
 *Falta implementar el Front-End.
+*Proceso de Auditoria
+
+Estos requisitos no estaban plasmados en el documento, pero se enuncias para mejorar y complementar la aplicacion
 
