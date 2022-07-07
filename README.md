@@ -75,6 +75,7 @@ docker run -d -p 6379:6379 --network microchallenge --name redis-database redis
 **ToDo**
 
 1-Guardado en cache las consultas de libros para de esta manera evitar varias peticiones hacia un mismo recurso
+  y mejorar el rendimiento.
 
 2-Front-End.
 
