@@ -47,14 +47,14 @@ REDIS
 docker run -d -p 6379:6379 --network microchallenge --name redis-database redis
 
 
-**Diagrama Arquitectonico de la aplicacion**
+>**Diagrama Arquitectonico de la aplicacion**
 
 
 ![mercado-libre-challenge-Emision 11-11-Architecture-Microservices](https://user-images.githubusercontent.com/67524326/177678296-d22c7c7b-3219-4ed8-b2a9-c604742e5a58.png)
 
 
 
-**Modelo C4- nivel 3**
+>**Modelo C4- nivel 3**
 
 
 ![mercado-libre-challenge-Emision 11-11-C4 Model-Level3](https://user-images.githubusercontent.com/67524326/177784718-138acb19-1124-4fcb-b944-ca7ea7585a2d.png)
@@ -62,13 +62,14 @@ docker run -d -p 6379:6379 --network microchallenge --name redis-database redis
 
 
 
-**Marco Arquitectonico para el desarrollo de las APIS**
+>**Marco Arquitectonico para el desarrollo de las APIS**
 
 ![CleanArchitecture](https://user-images.githubusercontent.com/67524326/177682188-4dfd19ab-8788-4ed1-b0e0-98bc6b4681d7.jpg)
 
 
 
 **ToDo**
+
 *Falta implmentar la funcionalidad guardado en cache las consultas de libros para de esta manera evitar varias peticiones hacia un mismo recurso
 
 *Falta implementar el Front-End.
@@ -83,7 +84,7 @@ Estos requisitos no estaban plasmados en el documento, pero se enuncias para mej
 Para probar los servicios, estos cuentas con documentacion mediante Swagger.
 
 
->Api Key, esta se inyecta directamente en el servicio expuesto por el nugget Google.Apis.Books.v1
+Api Key, esta se inyecta directamente en el servicio expuesto por el nugget Google.Apis.Books.v1
 
 APiKey: AIzaSyDYP8VYA5Jo6RtL_N86knRjMWPGjfMOpcw
 
