@@ -51,3 +51,9 @@ docker run -d -p 6379:6379 --network microchallenge --name redis-database redis
 
 
 ![mercado-libre-challenge-Emision 11-11-C4 Model-Level3](https://user-images.githubusercontent.com/67524326/177678307-88597c43-9597-40e3-bbf6-51d530c92931.png)
+
+
+ToDo
+*Falta implmentar la funcionalidad guardado en cache las consultas de libros para de esta manera evitar varias peticiones hacia un mismo recurso
+*Falta implementar el Front-End.
+
