@@ -1,0 +1,112 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/v1/Login/user-login",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 8012
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/login",
+      "UpstreamHttpMethod": []
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/User/user-register",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 8012
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/createUser",
+      "UpstreamHttpMethod": [],
+      "DangerousAcceptAnyServerCertificateValidator": true
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/GoogleBooksIntegration/google-books/{query}/{offset}/{count}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 8020
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/books/{query}/{offset}/{count}",
+      "UpstreamHttpMethod": [],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "DangerousAcceptAnyServerCertificateValidator": true
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/Bookswishlist/wishlist-create",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 8040
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/wishlist/create",
+      "UpstreamHttpMethod": [],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "DangerousAcceptAnyServerCertificateValidator": true
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/Bookswishlist/wishlist-addBook",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 8040
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/wishlist/add",
+      "UpstreamHttpMethod": [],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "DangerousAcceptAnyServerCertificateValidator": true
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/Bookswishlist/wishlist-deleteBook",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 8040
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/wishlist/delete",
+      "UpstreamHttpMethod": [],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "DangerousAcceptAnyServerCertificateValidator": true
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/Bookswishlist/wishlist-delete/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 8040
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/wishlist/deleteWishlist/{id}",
+      "UpstreamHttpMethod": [],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "DangerousAcceptAnyServerCertificateValidator": true
+    }
+  ],
+  "GlobalConfiguration": {
+
+  }
+}

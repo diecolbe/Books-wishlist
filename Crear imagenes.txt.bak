@@ -1,6 +1,3 @@
-# Books-wishlist
-Web application that allow manage books wishlist
-
 *Cada micro servicio tiene asociado un archivo Dockerfile el cual proporciona toda la informacion necesria para crear la imagen
 para ejecutarla se debe ir a la raiz de cada proyecto y copiar la ruta, luego se debe ejecutar el siguente comando: docker build -t [usuario o ambito]/[nombre de la imagen]
 
@@ -18,8 +15,6 @@ docker build -t challenge/microservicio-Gateway .
 microservicio- lista de deseos:
 docker build -t challenge/Bookswishlist
 
-
------Crear contenedores-------------------
 luego para crear los contenedores se deben ejecutar los sigueientes comandos,
 los puertos sobre el cual se expone el anfitrion se pueden cambiar segun se quiera que se ejecute
 
@@ -27,14 +22,3 @@ docker run -d -p 8012:8080 --name=microservicio-Seguridad challenge/Seguridad
 docker run -d -p 8020:8080 --name=microservicio-Integracion challenge/Integracion
 docker run -d -p 8030:8080 --name=microservicio-Gateway challenge/Gateway
 docker run -d -p 8040:8080 --name=microservicio-Bookswishlist challenge/Bookswishlist
-
-
-----imagenes para servicios externos----------------
-MYSQL 
-docker run --name mysql-database --network microchallenge  -e MYSQL_ROOT_PASSWORD=Prueb@2022 -p 3307:3306 -p 33061:33060 -d mysql
-
-MONGO
-docker run -p 27018:27017 --network microchallenge --name mongo-database -d mongo
-
-REDIS
-docker run -d -p 6379:6379 --network microchallenge --name redis-database redis

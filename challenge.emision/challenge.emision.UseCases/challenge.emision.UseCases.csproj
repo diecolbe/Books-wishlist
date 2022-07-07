@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\challenge.emision.MongoDb\challenge.emision.mongodb.csproj" />
+    <ProjectReference Include="..\challenge.emision.Ports\challenge.emision.ports.csproj" />
+    <ProjectReference Include="..\challenge.emision.shared\challenge.emision.shared.csproj" />
+  </ItemGroup>
+
+</Project>
