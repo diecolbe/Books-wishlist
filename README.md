@@ -40,7 +40,7 @@ REDIS
 docker run -d -p 6379:6379 --network microchallenge --name redis-database redis
 
 
-------Diagrama arquitectonico-----
+------Diagrama Arquitectonico de la aplicacion-----
 
 
 ![mercado-libre-challenge-Emision 11-11-Architecture-Microservices](https://user-images.githubusercontent.com/67524326/177678296-d22c7c7b-3219-4ed8-b2a9-c604742e5a58.png)
@@ -54,7 +54,7 @@ docker run -d -p 6379:6379 --network microchallenge --name redis-database redis
 
 
 
-----Marco arquitectonico para el desarrollo de las APIS----
+----Marco Arquitectonico para el desarrollo de las APIS----
 
 ![CleanArchitecture](https://user-images.githubusercontent.com/67524326/177682188-4dfd19ab-8788-4ed1-b0e0-98bc6b4681d7.jpg)
 
