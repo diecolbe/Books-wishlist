@@ -30,13 +30,13 @@ docker build -t challenge/Bookswishlist
 Para crear los contenedores se deben ejecutar los sigueientes comandos,
 los puertos sobre el cual se expone el anfitrion se pueden cambiar segun se quiera que se ejecute
 
-docker run -d -p 8012:8080 --name=microservicio-Seguridad challenge/Seguridad
+docker run -d -p 7016:443 --name=microservicio-Seguridad challenge/Seguridad
 
-docker run -d -p 8020:8080 --name=microservicio-Integracion challenge/Integracion
+docker run -d -p 7061:443 --name=microservicio-Integracion challenge/Integracion
 
-docker run -d -p 8030:8080 --name=microservicio-Gateway challenge/Gateway
+docker run -d -p 7278:443 --name=microservicio-Gateway challenge/Gateway
 
-docker run -d -p 8040:8080 --name=microservicio-Bookswishlist challenge/Bookswishlist
+docker run -d -p 7243:443 --name=microservicio-Bookswishlist challenge/Bookswishlist
 
 
 
@@ -44,11 +44,11 @@ docker run -d -p 8040:8080 --name=microservicio-Bookswishlist challenge/Bookswis
 
 >MYSQL
 
-docker run --name mysql-database --network microchallenge  -e MYSQL_ROOT_PASSWORD=Prueb@2022 -p 3307:3306 -p 33061:33060 -d mysql
+docker run --name mysql-database --network microchallenge  -e MYSQL_ROOT_PASSWORD=Prueb@2022 -p 3306:3306 -p 33061:33060 -d mysql
 
 >MONGO
 >
-docker run -p 27018:27017 --network microchallenge --name mongo-database -d mongo
+docker run -p 27017:27017 --network microchallenge --name mongo-database -d mongo
 
 >REDIS
 
