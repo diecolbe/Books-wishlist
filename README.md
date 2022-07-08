@@ -34,13 +34,13 @@ docker build -t challenge/bookswishlist .
 Para crear los contenedores se deben ejecutar los sigueientes comandos,
 los puertos sobre el cual se expone el anfitrion se pueden cambiar segun se quiera que se ejecute
 
-docker run -d -p 7016:443 --name=microservicio-Seguridad challenge/seguridad
+docker run -d -p 7016:443 --name=microservicio-seguridad challenge/seguridad
 
-docker run -d -p 7061:443 --name=microservicio-Integracion challenge/integracion
+docker run -d -p 7061:443 --name=microservicio-integracion challenge/integracion
 
-docker run -d -p 7278:443 --name=microservicio-Gateway challenge/gateway
+docker run -d -p 7278:443 --name=microservicio-gateway challenge/gateway
 
-docker run -d -p 7243:443 --name=microservicio-Bookswishlist challenge/bookswishlist
+docker run -d -p 7243:443 --name=microservicio-bookswishlist challenge/bookswishlist
 
 
 
