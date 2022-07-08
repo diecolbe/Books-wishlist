@@ -14,19 +14,19 @@ docker network create --driver nat microchallenge
 
 microservicio -seguridad:
 
-docker build -t challenge/Seguridad .
+docker build -t challenge/seguridad .
 
 microservicio -integracion:
 
-docker build -t challenge/Integracion .
+docker build -t challenge/integracion .
 
 microservicio -integracion:
 
-docker build -t challenge/microservicio-Gateway .
+docker build -t challenge/gateway .
 
 microservicio- lista de deseos:
 
-docker build -t challenge/Bookswishlist
+docker build -t challenge/bookswishlist .
 
 
 **Crear contenedores**
@@ -34,13 +34,13 @@ docker build -t challenge/Bookswishlist
 Para crear los contenedores se deben ejecutar los sigueientes comandos,
 los puertos sobre el cual se expone el anfitrion se pueden cambiar segun se quiera que se ejecute
 
-docker run -d -p 7016:443 --name=microservicio-Seguridad challenge/Seguridad
+docker run -d -p 7016:443 --name=microservicio-Seguridad challenge/seguridad
 
-docker run -d -p 7061:443 --name=microservicio-Integracion challenge/Integracion
+docker run -d -p 7061:443 --name=microservicio-Integracion challenge/integracion
 
-docker run -d -p 7278:443 --name=microservicio-Gateway challenge/Gateway
+docker run -d -p 7278:443 --name=microservicio-Gateway challenge/gateway
 
-docker run -d -p 7243:443 --name=microservicio-Bookswishlist challenge/Bookswishlist
+docker run -d -p 7243:443 --name=microservicio-Bookswishlist challenge/bookswishlist
 
 
 
