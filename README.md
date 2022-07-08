@@ -13,15 +13,19 @@ docker network create --driver nat microchallenge
 **Crear Imagenes**
 
 microservicio -seguridad:
+
 docker build -t challenge/Seguridad .
 
 microservicio -integracion:
+
 docker build -t challenge/Integracion .
 
 microservicio -integracion:
+
 docker build -t challenge/microservicio-Gateway .
 
 microservicio- lista de deseos:
+
 docker build -t challenge/Bookswishlist
 
 
