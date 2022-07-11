@@ -111,7 +111,7 @@ APiKey: AIzaSyDYP8VYA5Jo6RtL_N86knRjMWPGjfMOpcw
 
 **Filtro por titulo**
 
-[title]+intitle:clean clode
+[title]+intitle
 
 ejemplo:
 
