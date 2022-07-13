@@ -84,6 +84,7 @@ docker run -d -p 6379:6379 --network microchallenge --name redis-database redis
 
 ![ER-Model books wishlist](https://user-images.githubusercontent.com/67524326/178773647-5789d0ef-aa34-4804-9dbf-b40e60f927fb.png)
 
+https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html
 
 
 **ToDo**
