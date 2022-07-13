@@ -1,7 +1,7 @@
 # Books-wishlist
 Web application that allow manage books wishlist
 
-*Cada micro servicio tiene asociado un archivo Dockerfile el cual proporciona toda la informacion necesria para crear la imagen
+Cada micro servicio tiene asociado un archivo Dockerfile el cual proporciona toda la informacion necesria para crear la imagen
 para ejecutarla se debe ir a la raiz de cada proyecto y copiar la ruta, luego se debe ejecutar el siguente comando: docker build -t [usuario o ambito]/[nombre de la imagen]
 
 
@@ -28,6 +28,7 @@ microservicio- lista de deseos:
 
 docker build -t diegocolorado2020/bookswishlist .
 
+#
 
 **Crear contenedores**
 
