@@ -80,6 +80,9 @@ docker run -d -p 6379:6379 --network microchallenge --name redis-database redis
 ![CleanArchitecture](https://user-images.githubusercontent.com/67524326/177682188-4dfd19ab-8788-4ed1-b0e0-98bc6b4681d7.jpg)
 
 
+>**Modelo Entidad relacion**
+![ER-Model books wishlist](https://user-images.githubusercontent.com/67524326/178772445-aa721163-0066-49cf-b23d-942979f9bc71.png)
+
 
 **ToDo**
 
