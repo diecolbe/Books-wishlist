@@ -43,7 +43,7 @@ docker run -d -p 7278:443 --name=microservicio-gateway diegocolorado2020/gateway
 
 docker run -d -p 7243:443 --name=microservicio-bookswishlist diegocolorado2020/bookswishlist
 
-
+#
 
 **Imagenes para servicios externos**
 
@@ -59,22 +59,21 @@ docker run -p 27017:27017 --network microchallenge --name mongo-database -d mong
 
 docker run -d -p 6379:6379 --network microchallenge --name redis-database redis
 
+#
 
 >**Diagrama Arquitectonico de la aplicacion**
 
 
 ![mercado-libre-challenge-Emision 11-11-Architecture-Microservices](https://user-images.githubusercontent.com/67524326/177800547-5e257471-76dc-4575-abc6-e770b84484c6.png)
 
-
-
+#
 
 >**Modelo C4- nivel 3**
 
 
 ![mercado-libre-challenge-Emision 11-11-C4 Model-Level3](https://user-images.githubusercontent.com/67524326/177784718-138acb19-1124-4fcb-b944-ca7ea7585a2d.png)
 
-
-
+#
 
 >**Marco Arquitectonico para el desarrollo de las APIS**
 
@@ -83,13 +82,14 @@ docker run -d -p 6379:6379 --network microchallenge --name redis-database redis
 
 referencias : https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html
 
+#
 
 >**Modelo Entidad relacion**
 
 ![ER-Model books wishlist](https://user-images.githubusercontent.com/67524326/178773647-5789d0ef-aa34-4804-9dbf-b40e60f927fb.png)
 
 
-
+#
 
 **ToDo**
 
@@ -106,6 +106,7 @@ referencias : https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-archite
 
 Algunos de estos requisitos no estaban plasmados en el documento, pero se enuncian para mejorar y complementar la aplicacion.
 
+#
 
 **Documentacion APIS**
 
