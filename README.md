@@ -80,11 +80,14 @@ docker run -d -p 6379:6379 --network microchallenge --name redis-database redis
 ![CleanArchitecture](https://user-images.githubusercontent.com/67524326/177682188-4dfd19ab-8788-4ed1-b0e0-98bc6b4681d7.jpg)
 
 
+referencias : https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html
+
+
 >**Modelo Entidad relacion**
 
 ![ER-Model books wishlist](https://user-images.githubusercontent.com/67524326/178773647-5789d0ef-aa34-4804-9dbf-b40e60f927fb.png)
 
-https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html
+
 
 
 **ToDo**
