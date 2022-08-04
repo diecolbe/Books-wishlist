@@ -25,7 +25,7 @@ namespace challenge.emision.GoogleIntegrations.Repositories
             listquery.MaxResults = count;
             listquery.StartIndex = offset;
             var res = listquery.Execute();
-
+           
             var books = res.Items.Select(b => new GoogleBook
             {
                 Id = b.Id,

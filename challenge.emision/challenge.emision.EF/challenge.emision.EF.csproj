@@ -27,6 +27,7 @@
 
 	<ItemGroup>
 		<ProjectReference Include="..\challenge.emision.Domain\challenge.emision.domain.csproj" />
+		<ProjectReference Include="..\challenge.emision.shared\challenge.emision.shared.csproj" />
 	</ItemGroup>
 
 </Project>

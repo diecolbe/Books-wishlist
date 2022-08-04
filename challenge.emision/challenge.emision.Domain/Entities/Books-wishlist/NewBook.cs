@@ -1,6 +1,6 @@
-﻿namespace challenge.emision.dtos
+﻿namespace challenge.emision.domain.Entities.Books_wishlist
 {
-    public class BookDto
+    public class NewBook
     {
         public string? Id { get; set; }
         public string? Title { get; set; }

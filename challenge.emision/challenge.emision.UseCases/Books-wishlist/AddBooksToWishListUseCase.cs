@@ -1,4 +1,5 @@
 ﻿using challenge.emision.domain.Entities;
+using challenge.emision.domain.Entities.Books_wishlist;
 using challenge.emision.domain.Interfaces.Repositories;
 using challenge.emision.dtos;
 using challenge.emision.ports.Input;
@@ -24,8 +25,8 @@ namespace challenge.emision.UseCases
         {
             try
             {
-                var newListBooks = Mapper.MapperList<BookDto, Book>(newBooks.Books);
-                var result = Mapper.MapperList<Book, BookDto>(addBookToWishlistRepository.AddBook(newBooks.IdBookswishlist, newListBooks));
+                var newListBooks = Mapper.MapperList<BookDto, NewBook>(newBooks.Books);
+                var result = Mapper.MapperList<NewBook, BookDto>(addBookToWishlistRepository.AddBook(newBooks.IdBookswishlist, newListBooks));
                 await addBookToWishlistOutputPort.Handle(result);
             }
             catch (Exception ex)

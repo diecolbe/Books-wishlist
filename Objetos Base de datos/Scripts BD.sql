@@ -1,6 +1,6 @@
-MYSQL
-==========
 CREATE DATABASE db_challengeEmision;
+
+USE db_challengeEmision;
 
 CREATE TABLE Bookswishlist(
 	Id INT AUTO_INCREMENT PRIMARY KEY,

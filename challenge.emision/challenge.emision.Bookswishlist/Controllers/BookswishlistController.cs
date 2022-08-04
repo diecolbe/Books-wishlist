@@ -110,5 +110,32 @@ namespace challenge.emision.BookswishlistApi.Controllers
             else
                 return StatusCode(204);
         }
+
+        [HttpGet("HackerRank")]
+        public async Task<IActionResult> HackerRank()
+        {
+            string result = Test();
+            return Ok(result);
+        }
+
+        private string Test()
+        {
+            List<int> A = new List<int>() { 3, 3, 1, 2 };
+            int k = 8;
+            
+
+            for (int i = 0; i <= A.Count() - 1; i++)
+            {
+                for (int j = i + 1; j < A.Count(); j++)
+                {
+                    if (A[i] + A[j] == k)
+                    {
+                        return "yes";
+                    }
+                }
+            }
+
+            return "no";
+        }
     }
 }

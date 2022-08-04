@@ -2,11 +2,11 @@
   "Routes": [
     {
       "DownstreamPathTemplate": "/api/v1/Login/user-login",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": 8012
+          "Host": "microservicio-seguridad",
+          "Port": 80
         }
       ],
       "UpstreamPathTemplate": "/api/v1/login",
@@ -14,16 +14,15 @@
     },
     {
       "DownstreamPathTemplate": "/api/v1/User/user-register",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": 8012
+          "Host": "microservicio-seguridad",
+          "Port": 80
         }
       ],
       "UpstreamPathTemplate": "/api/v1/createUser",
-      "UpstreamHttpMethod": [],
-      "DangerousAcceptAnyServerCertificateValidator": true
+      "UpstreamHttpMethod": []
     },
     {
       "DownstreamPathTemplate": "/api/v1/GoogleBooksIntegration/google-books/{query}/{offset}/{count}",
@@ -31,7 +30,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 8020
+          "Port": 80
         }
       ],
       "UpstreamPathTemplate": "/api/v1/books/{query}/{offset}/{count}",
@@ -47,7 +46,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 8040
+          "Port": 80
         }
       ],
       "UpstreamPathTemplate": "/api/v1/wishlist/create",
@@ -63,7 +62,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 8040
+          "Port": 80
         }
       ],
       "UpstreamPathTemplate": "/api/v1/wishlist/add",
@@ -79,7 +78,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 8040
+          "Port": 80
         }
       ],
       "UpstreamPathTemplate": "/api/v1/wishlist/delete",
@@ -95,7 +94,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 8040
+          "Port": 80
         }
       ],
       "UpstreamPathTemplate": "/api/v1/wishlist/deleteWishlist/{id}",

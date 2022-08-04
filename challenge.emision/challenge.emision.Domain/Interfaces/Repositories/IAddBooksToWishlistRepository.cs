@@ -1,9 +1,10 @@
 ﻿using challenge.emision.domain.Entities;
+using challenge.emision.domain.Entities.Books_wishlist;
 
 namespace challenge.emision.domain.Interfaces.Repositories
 {
     public interface IAddBooksToWishlistRepository
     {
-        List<Book> AddBook(int IdBookswishlist, List<Book>? Books);
+        List<NewBook> AddBook(int IdBookswishlist, List<NewBook>? Books);
     }
 }

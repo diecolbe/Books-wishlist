@@ -5,7 +5,7 @@
 		<Nullable>enable</Nullable>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<UserSecretsId>a6defe89-ba57-4bd8-a80a-bbe628ff590e</UserSecretsId>
-		<DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
+		<DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -19,6 +19,14 @@
 		<ProjectReference Include="..\challenge.emision.DTOs\challenge.emision.dtos.csproj" />
 		<ProjectReference Include="..\challenge.emision.IoC\challenge.emision.IoC.csproj" />
 		<ProjectReference Include="..\challenge.emision.Presenters\challenge.emision.presenters.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Content Update="appsettings.docker.json">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	    <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+	    <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+	  </Content>
 	</ItemGroup>
 
 </Project>

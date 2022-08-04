@@ -1,7 +1,9 @@
 ﻿using challenge.emision.domain.Entities;
+using challenge.emision.domain.Entities.Books_wishlist;
 using challenge.emision.domain.Interfaces.Repositories;
 using challenge.emision.domain.Interfaces.RepositoryPattern;
 using challenge.emision.EF.Context;
+using challenge.emision.shared;
 using Microsoft.Extensions.Logging;
 
 namespace challenge.emision.EF.Repositories
@@ -21,7 +23,7 @@ namespace challenge.emision.EF.Repositories
             this.context = context;
         }
 
-        public List<Book> AddBook(int IdBookswishlist, List<Book>? books)
+        public List<NewBook> AddBook(int IdBookswishlist, List<NewBook>? books)
         {
             using (var transaction = context.Database.BeginTransaction())
             {
@@ -37,12 +39,16 @@ namespace challenge.emision.EF.Repositories
                         {
                             var existBook = await unitOfWork.Repository<Book>().ExistAsync(f => f.Id.Equals(book.Id));
                             if (!existBook)
-                                unitOfWork.Repository<Book>().Insert(book);
+                            {
+                                var newBook = Mapper.MapperObject<NewBook, Book>(book);
+                                unitOfWork.Repository<Book>().Insert(newBook);
+                            }
 
                             unitOfWork.Repository<Bookswishlist_Book>().Insert(new Bookswishlist_Book()
                             {
                                 IdBook = book.Id,
-                                IdBookswishlist = IdBookswishlist
+                                IdBookswishlist = IdBookswishlist,
+                                NumberBook = book.NumberBook
                             });
                         }
                     });
